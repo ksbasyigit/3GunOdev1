@@ -23,15 +23,26 @@ public class Main {
 		System.out.println(dortIslem.Topla(3, 4));
 		
 		Product product = new Product();
-		product.name = "Laptop";
-		product.id = 1;
-		product.price = 5000;
-		product.stockAmount = 3;
-		product.description = "Asus Laptop";
-		System.out.println(product.name);
+//		product.name = "Laptop";
+//		product.id = 1;
+//		product.price = 5000;
+//		product.stockAmount = 3;
+//		product.description = "Asus Laptop";
+//		System.out.println(product.name);
+//		
+//		ProductManager productManager = new ProductManager();
+//		productManager.Add(product);
+//		
+//		productManager.Add(2, "Laptop2", "HP Laptop", 2, 200);
 		
-		ProductManager productManager = new ProductManager();
-		productManager.Add(product);
+		product.setName("Laptop");
+		product.setId(3);
+		product.setDescription("Dell Laptop");
+		product.setPrice(5500);
+		product.setRenk("Siyah");
+		product.setStockAmount(10);
+		
+		System.out.println(product.getKod());
 	}
 
 }
