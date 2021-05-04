@@ -7,10 +7,21 @@ public class Product {
 	private int stockAmount;
 	private String renk;
 	private String kod;
-	
-//	public void metot() {
-//		
-//	}
+
+	public Product(int id, String name, String description, double price, int stockAmount, String renk, String kod) {
+		System.out.println("Yapıcı block çalıştı.");
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.stockAmount = stockAmount;
+		this.renk = renk;
+		this.kod = kod;
+	}
+
+	public Product() {
+
+	}
 
 	public int getId() {
 		return id;
@@ -61,7 +72,7 @@ public class Product {
 	}
 
 	public String getKod() {
-		return this.name.substring(0,1) + id;
+		return this.name.substring(0, 1) + id;
 	}
 
 	public void setKod(String kod) {
